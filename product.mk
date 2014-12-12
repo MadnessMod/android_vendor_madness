@@ -1,5 +1,5 @@
 CM_BUILDTYPE := MADNESS
-PRODUCT_BOOTANIMATION := vendor/mordesku/bootanimation.zip
+PRODUCT_BOOTANIMATION := vendor/extra/bootanimation.zip
 
 SUPERUSER_EMBEDDED := true
 SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
