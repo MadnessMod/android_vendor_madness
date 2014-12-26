@@ -1,3 +1,4 @@
+MM_VERSION = 1.0-SNAPSHOT-$(shell date -u +%Y%m%d%H)
 CM_BUILDTYPE := MADNESS
 CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d%H)-$(CM_BUILDTYPE)$(CM_EXTRAVERSION)-$(CM_BUILD)
 CM_DISPLAY_VERSION := $(CM_VERSION)
@@ -7,6 +8,7 @@ SUPERUSER_EMBEDDED := true
 SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 
 PRODUCT_PROPERTY_OVERRIDES += \
+  ro.madness.version=MM_VERSION \
   ro.rommanager.developerid=mordesku \
   ro.cm.version=$(CM_VERSION) \
   ro.cm.releasetype=$(CM_BUILDTYPE) \
