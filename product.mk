@@ -8,7 +8,7 @@ SUPERUSER_EMBEDDED := true
 SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.madness.version=MM_VERSION \
+  ro.madness.version=$(MM_VERSION) \
   ro.rommanager.developerid=mordesku \
   ro.cm.version=$(CM_VERSION) \
   ro.cm.releasetype=$(CM_BUILDTYPE) \
